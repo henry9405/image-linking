@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Links</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    header, nav, main {
+      margin-bottom: 20px;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Image Gallery!</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#menu">Menu</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Home</h2>
+      <p>Welcome to our tech corner! Check out the latest gadgets and innovations.</p>
+      <img src="tech.jpeg" alt="Technology Image">
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="grid">
+        <img src="nature1.jpeg" alt="Nature Image 1">
+        <a href="https://example.com/nature2"><img src="nature2.jpeg" alt="Nature Image 2"></a>
+        <a href="https://example.com/nature3"><img src="nature3.jpeg" alt="Nature Image 3"></a>
+      </div>
+    </section>
+
+    <section id="menu">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="https://example.com/food1"><img src="food.jpeg" alt="Food Image 1"> Food Item 1</a></li>
+        <li><a href="https://example.com/food2"><img src="food1.jpeg" alt="Food Image 2"> Food Item 2</a></li>
+        <li><a href="https://example.com/food3"><img src="food2.jpeg" alt="Food Image 3"> Food Item 3</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
